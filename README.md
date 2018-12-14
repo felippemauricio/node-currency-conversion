@@ -5,7 +5,7 @@
 [![Code Style](https://badgen.net/badge/code%20style/airbnb/fd5c63)](https://github.com/airbnb/javascript)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/felippemauricio/node-currency-conversion/pulls)
 
-Esse projeto consiste em uma API desenvolvida em **node** que faz a converção monetária entre algumas moedas.
+Esse projeto consiste em uma API desenvolvida em node que faz a converção monetária entre algumas moedas.
 
 Até o momento, esse projeto aceita apenas as seguintes moedas:
 - BRL - Real Brasileiro
