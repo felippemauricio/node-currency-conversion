@@ -1,4 +1,4 @@
-# Conversão Monetária API - Node 
+# Conversão Monetária API - Node
 [![Build Status](https://travis-ci.org/felippemauricio/node-currency-conversion.svg?branch=master)](https://travis-ci.org/felippemauricio/node-currency-conversion)
 [![Dependencies](https://david-dm.org/felippemauricio/node-currency-conversion.svg)](https://david-dm.org/felippemauricio/node-currency-conversion)
 [![devDependencies Status](https://david-dm.org/felippemauricio/node-currency-conversion/dev-status.svg)](https://david-dm.org/felippemauricio/node-currency-conversion?type=dev)
@@ -51,12 +51,6 @@ Você pode também, rodar cada tipo de teste separadamente.
 ```
 make test-unit    // Para testes unitários
 make test-system  // Para testes de sistema
-```
-
-Existe ainda um outro tipo de teste que esse projeto aborda, o teste de estresse. Para roda-lo, é necessário que você inicie esta API no seu terminal, e em outra janela de terminal, que o seguinte código seja executado.
-
-```
-make test-stress
 ```
 
 ## Quais são os endpoints?

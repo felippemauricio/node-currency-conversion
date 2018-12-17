@@ -9,7 +9,6 @@
     "start-dev": "nodemon server.js",
     "test": "jest tests --forceExit --detectOpenHandles",
     "test-system": "jest tests/system --forceExit --detectOpenHandles",
-    "test-stress": "artillery quick --count 1000 -n 10 'http://localhost:3000/currency-conversion?from=BTC&to=EUR&amount=123.45'",
     "test-unit": "jest tests/unit"
   },
   "repository": {
@@ -23,23 +22,22 @@
   },
   "homepage": "https://github.com/felippemauricio/challenge-bravo#readme",
   "dependencies": {
-    "express": "^4.16.3",
+    "express": "^4.16.4",
     "express-request-id": "^1.4.1",
-    "helmet": "^3.14.0",
+    "helmet": "^3.15.0",
     "morgan": "^1.9.1",
     "node-cache": "^4.2.0",
-    "node-fetch": "^2.2.0",
+    "node-fetch": "^2.3.0",
     "promise-fn-retry": "^1.0.4",
-    "ramda": "^0.26.0"
+    "ramda": "^0.26.1"
   },
   "devDependencies": {
-    "artillery": "^1.6.0-24",
-    "eslint": "^5.6.1",
+    "eslint": "^5.10.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
     "jest": "^23.6.0",
-    "nock": "^10.0.1",
-    "nodemon": "^1.18.4",
+    "nock": "^10.0.4",
+    "nodemon": "^1.18.9",
     "supertest": "^3.3.0"
   },
   "jest": {
