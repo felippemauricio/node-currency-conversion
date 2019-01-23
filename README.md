@@ -117,13 +117,6 @@ get https://challenge-bravo.herokuapp.com/currency-conversion?from=BTC&to=EUR&am
 - A cada request, as taxas de conversão são salvas em memória. Se em algum momento, algum request falhar, a idéia é utilizar a taxa de conversão da mesma moeda salva em memória, onde existe uma grande chance de estarmos retornando um valor atual para o usuário.
 
 
-## Sugestões de melhorias
-
-- Utilizar a memória mais vezes, em vez de apenas utiliza-la em casos de falha. Isto aumentaria significamente a performance da API.
-
-- Formatar os valores retornados, por exemplo: `23.87653` -> `23.88`.
-
-
 ## Variáveis de Ambiente
 
 Em todos os ambientes, você pode configurar as seguintes variáveis de ambiente:
