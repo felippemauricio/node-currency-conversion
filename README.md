@@ -14,7 +14,7 @@ Até o momento, esse projeto aceita apenas as seguintes moedas:
 - EUR - Euro
 - USD - Dollar Americano
 
-![](https://e.rpp-noticias.io/normal/2017/08/02/021602_457141.jpg)
+![](https://raw.githubusercontent.com/felippemauricio/node-currency-conversion/master/docs/images/money.jpg)
 
 ## O que você precisa instalar para trabalhar neste projeto?
 
