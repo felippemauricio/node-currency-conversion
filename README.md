@@ -2,6 +2,7 @@
 [![Build Status](https://travis-ci.org/felippemauricio/node-currency-conversion.svg?branch=master)](https://travis-ci.org/felippemauricio/node-currency-conversion)
 [![Dependencies](https://david-dm.org/felippemauricio/node-currency-conversion.svg)](https://david-dm.org/felippemauricio/node-currency-conversion)
 [![devDependencies Status](https://david-dm.org/felippemauricio/node-currency-conversion/dev-status.svg)](https://david-dm.org/felippemauricio/node-currency-conversion?type=dev)
+[![Coverage Status](https://coveralls.io/repos/github/felippemauricio/node-currency-conversion/badge.svg?branch=master)](https://coveralls.io/github/felippemauricio/node-currency-conversion?branch=master)
 [![Code Style](https://badgen.net/badge/code%20style/airbnb/fd5c63)](https://github.com/airbnb/javascript)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/felippemauricio/node-currency-conversion/pulls)
 
@@ -43,7 +44,7 @@ make lint
 ```javascript
 make test // All tests
 
-// or 
+// or
 
 make test-unit    // Unit tests
 make test-system  // System tests
