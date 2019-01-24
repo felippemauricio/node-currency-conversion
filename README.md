@@ -1,4 +1,4 @@
-# Conversão Monetária API - Node
+# Currency Conversion - Node
 [![Build Status](https://travis-ci.org/felippemauricio/node-currency-conversion.svg?branch=master)](https://travis-ci.org/felippemauricio/node-currency-conversion)
 [![Dependencies](https://david-dm.org/felippemauricio/node-currency-conversion.svg)](https://david-dm.org/felippemauricio/node-currency-conversion)
 [![devDependencies Status](https://david-dm.org/felippemauricio/node-currency-conversion/dev-status.svg)](https://david-dm.org/felippemauricio/node-currency-conversion?type=dev)
@@ -105,7 +105,7 @@ get https://challenge-bravo.herokuapp.com/currency-conversion?from=BTC&to=EUR&am
 
 ## Enviroment vars
 
-| VARIÁVEL                     | DEFAULT                | DESCRIÇÃO                                               |
+| VARIABLE                     | DEFAULT                | DESCRIPTION                                             |
 |------------------------------|:----------------------:|---------------------------------------------------------|
 | CRYPTOCOMPARE_URL            |                        | Url para acessar a CryptoCompare API                    |
 | CRYPTOCOMPARE_RETRY_DELAY    | 100                    | Delay entre uma requisição e sua retentativa            |
