@@ -5,62 +5,58 @@
 [![Code Style](https://badgen.net/badge/code%20style/airbnb/fd5c63)](https://github.com/airbnb/javascript)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/felippemauricio/node-currency-conversion/pulls)
 
-Esse projeto consiste em uma API desenvolvida em node que faz a converção monetária entre algumas moedas.
+This project consists of an API developed in node that does the currency conversion between some coins.
 
-Até o momento, esse projeto aceita apenas as seguintes moedas:
-- BRL - Real Brasileiro
-- BTC - Bitcoin
-- ETH - Ethereum
-- EUR - Euro
-- USD - Dollar Americano
+To date, this only accepts the following currencys:
+- BRL - Brazilian Real;
+- BTC - Bitcoin;
+- ETH - Ethereum;
+- EUR - Euro;
+- USD - American Dollar;
 
 ![](https://raw.githubusercontent.com/felippemauricio/node-currency-conversion/master/docs/images/money.jpg)
 
-## O que você precisa instalar para trabalhar neste projeto?
+## What do you need?
 
 - docker
 - git
 - make
 
-## Como instalar as dependências?
-```
+## How to install?
+```sh
 make install
 ```
 
-## Como rodar o projeto em ambiente de desenvolvimento?
+## How to start?
 
-```
+```sh
 make start
 ```
 
-## Como rodar o lint?
-```
+## How to run the lint?
+```sh
 make lint
 ```
 
-## Como rodar os testes?
+## How to run the tests?
 
-Esse código, rodará todos os testes unitários e os de sistema.
+```javascript
+make test // All tests
 
-```
-make test
-```
+// or 
 
-Você pode também, rodar cada tipo de teste separadamente.
-
-```
-make test-unit    // Para testes unitários
-make test-system  // Para testes de sistema
+make test-unit    // Unit tests
+make test-system  // System tests
 ```
 
-## Quais são os endpoints?
+## Endpoints
 
-### Saúde da Api
+### Healthcheck
 
   - get `/health`.
 
 Response:
-```
+```javascript
 {
   "api": true,
   "integrations": {
@@ -69,13 +65,13 @@ Response:
 }
 ```
 
-### Conversor de moedas
+### Currency converter
 
   - get `/currency-conversion?from=BTC&to=EUR&amount=123.45`.
   - get `/currency-conversion?from=BTC&to=EUR,BRL&amount=123.45`.
 
 Response:
-```
+```javascript
 {
   "amount": 123.45,
   "base": "BTC",
@@ -89,37 +85,25 @@ Response:
 }
 ```
 
-## Imagem de produção
+## Download the docker image
 
-A cada versão do código que é mergeada para a `master`, o sistema gera uma nova imagem docker via `Travis-CI`. Essa imagem está disponível no `Docker Hub`.
+Each version of the code that is mergeed to `master`, the system generates a new image of docker using `Travis-CI`. This image is available on the `Docker Hub` and you can run using the following command.
 
-```
+```sh
 docker run -p 8080:3000 felippemauricio/challenge-bravo
 ```
 
-## Produção
+## Production
 
-A cada versão do código que é mergeada para a `master`, o sistema faz o deploy da aplicação no `Heroku`, usando a imagem docker da aplicação.
+Each version of the code that is mergeed to `master`, the system makes the deploy on `Heroku` using the docker image. So, you can access using the `https://challenge-bravo.herokuapp.com` host.
 
-Assim, o sistema está disponível no host `https://challenge-bravo.herokuapp.com`;
-
-Exemplos de Requests:
-```
+Examples:
+```sh
 get https://challenge-bravo.herokuapp.com/health
 get https://challenge-bravo.herokuapp.com/currency-conversion?from=BTC&to=EUR&amount=123.45
 ```
 
-
-## Informações importantes
-
-- Para pegar a taxa de conversão entre as moedas, esse projeto utiliza a **CRYPTOCOMPARE**, que é uma API gratuita que fornece os valores de conversão entre as moedas.
-
-- A cada request, as taxas de conversão são salvas em memória. Se em algum momento, algum request falhar, a idéia é utilizar a taxa de conversão da mesma moeda salva em memória, onde existe uma grande chance de estarmos retornando um valor atual para o usuário.
-
-
-## Variáveis de Ambiente
-
-Em todos os ambientes, você pode configurar as seguintes variáveis de ambiente:
+## Enviroment vars
 
 | VARIÁVEL                     | DEFAULT                | DESCRIÇÃO                                               |
 |------------------------------|:----------------------:|---------------------------------------------------------|
