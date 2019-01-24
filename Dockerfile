@@ -1,4 +1,4 @@
-FROM node
+FROM node:11.7.0-alpine
 MAINTAINER Felippe Maurício
 
 ENV CRYPTOCOMPARE_URL https://min-api.cryptocompare.com/data/price?fsym={{from}}&tsyms={{to}}
