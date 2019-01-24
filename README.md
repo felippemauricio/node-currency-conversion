@@ -107,9 +107,9 @@ get https://challenge-bravo.herokuapp.com/currency-conversion?from=BTC&to=EUR&am
 
 | VARIABLE                     | DEFAULT                | DESCRIPTION                                             |
 |------------------------------|:----------------------:|---------------------------------------------------------|
-| CRYPTOCOMPARE_URL            |                        | Url para acessar a CryptoCompare API                    |
-| CRYPTOCOMPARE_RETRY_DELAY    | 100                    | Delay entre uma requisição e sua retentativa            |
-| CRYPTOCOMPARE_RETRY_TIMES    | 1                      | Retentativas em caso de falha                           |
-| CRYPTOCOMPARE_TIMEOUT        | 3000                   | Timeout da requisição                                   |
-| NODE_ENV                     | development            | Ambiente                                                |
-| PORT                         | 3000                   | Porta em que a API irá ser executada                    |
+| CRYPTOCOMPARE_URL            |                        | Url to make requests to CryptoCompare API               |
+| CRYPTOCOMPARE_RETRY_DELAY    | 100                    | Delay into CryptoCompare API request                    |
+| CRYPTOCOMPARE_RETRY_TIMES    | 1                      | Retry strategy to fail requests                         |
+| CRYPTOCOMPARE_TIMEOUT        | 3000                   | Timeout into CryptoCompare API request                  |
+| NODE_ENV                     | development            | Current Enviroment                                      |
+| PORT                         | 3000                   | Port to start server                                    |
