@@ -1,7 +1,7 @@
 {
   "name": "node-currency-conversion",
   "version": "1.0.0",
-  "description": "Construa uma API, que responda JSON, para conversão monetária. Ela deve ter uma moeda de lastro (USD) e fazer conversões entre diferentes moedas com cotações de verdade e atuais.",
+  "description": "Currency converter node",
   "main": "server.js",
   "scripts": {
     "lint": "eslint . --fix",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/felippemauricio/challenge-bravo.git"
+    "url": "git+https://github.com/felippemauricio/node-currency-conversion.git"
   },
   "author": "Felippe Maurício",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/felippemauricio/challenge-bravo/issues"
+    "url": "https://github.com/felippemauricio/node-currency-conversion/issues"
   },
-  "homepage": "https://github.com/felippemauricio/challenge-bravo#readme",
+  "homepage": "https://github.com/felippemauricio/node-currency-conversion#readme",
   "dependencies": {
     "express": "^4.16.4",
     "express-request-id": "^1.4.1",
@@ -32,13 +32,13 @@
     "ramda": "^0.26.1"
   },
   "devDependencies": {
-    "eslint": "^5.10.0",
+    "eslint": "^5.12.1",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
     "jest": "^23.6.0",
-    "nock": "^10.0.4",
+    "nock": "^10.0.6",
     "nodemon": "^1.18.9",
-    "supertest": "^3.3.0"
+    "supertest": "^3.4.2"
   },
   "jest": {
     "setupFiles": [
