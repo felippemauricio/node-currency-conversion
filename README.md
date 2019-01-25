@@ -50,6 +50,11 @@ make test-unit    // Unit tests
 make test-system  // System tests
 ```
 
+## Architecture
+
+![](https://raw.githubusercontent.com/felippemauricio/node-currency-conversion/master/docs/images/architecture.png)
+
+
 ## Endpoints
 
 ### Healthcheck
