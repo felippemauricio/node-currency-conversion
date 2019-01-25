@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/felippemauricio/node-currency-conversion#readme",
   "dependencies": {
+    "compression": "^1.7.3",
     "express": "^4.16.4",
     "express-request-id": "^1.4.1",
     "helmet": "^3.15.0",
