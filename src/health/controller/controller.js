@@ -16,10 +16,14 @@ const _verifyCryptoCompare = async () => {
 };
 
 const health = async (_req, res) => {
+  const hasAccessToCryptoCompare = await _verifyCryptoCompare();
+  if (!hasAccessToCryptoCompare) {
+    res.status(503);
+  }
   res.json({
     api: true,
     integrations: {
-      cryptoCompare: await _verifyCryptoCompare(),
+      cryptoCompare: hasAccessToCryptoCompare,
     },
   });
 };
