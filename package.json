@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "lint": "eslint . --fix",
-    "start": "node server.js",
+    "start": "pm2 start server.js -i max",
     "start-dev": "nodemon server.js",
     "test": "jest tests --forceExit --detectOpenHandles",
     "test-coverage": "jest tests --coverage --coverageReporters=text-lcov --forceExit --detectOpenHandles | coveralls",
@@ -30,6 +30,7 @@
     "morgan": "^1.9.1",
     "node-cache": "^4.2.0",
     "node-fetch": "^2.3.0",
+    "pm2": "^3.2.9",
     "promise-fn-retry": "^1.0.4",
     "ramda": "^0.26.1"
   },
