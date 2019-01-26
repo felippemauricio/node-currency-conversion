@@ -1,7 +1,7 @@
-const { calcAmountByRates } = require('../../src/currency-conversion/helpers/converter');
+const { calcAmountByRates } = require('../../src/currency-conversion/services/converter');
 
 
-describe('helper.converter.calcAmountByRates', () => {
+describe('services.converter.calcAmountByRates', () => {
   const amount = 22.30;
   const firstCode = 'USD';
   const secondCode = 'BRL';

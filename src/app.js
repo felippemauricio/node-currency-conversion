@@ -3,7 +3,7 @@ const app = require('express')();
 const addRequestId = require('express-request-id');
 const helmet = require('helmet');
 const morgan = require('morgan');
-const { register } = require('./core/helpers');
+const { env, register } = require('./core/helpers');
 const routers = require('./core/routers');
 
 
@@ -11,12 +11,16 @@ const undefinedRouter = (_req, res) => {
   res.sendStatus(404);
 };
 
+const morganConfig = morgan('dev', {
+  skip: () => env.NODE_ENV !== 'development',
+});
+
 
 register(
   [addRequestId()],
   [compression()],
   [helmet()],
-  [morgan('dev')],
+  [morganConfig],
   [routers],
   [undefinedRouter],
 )(app);

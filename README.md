@@ -93,7 +93,7 @@ Response:
 
 ## Download the docker image
 
-Each version of the code that is mergeed to `master`, the system generates a new image of docker using `Travis-CI`. This image is available on the `Docker Hub` and you can run using the following command.
+Each version of the code that is merged to `master`, the system generates a new image of docker using `Travis-CI`. This image is available on the `Docker Hub` and you can run using the following command.
 
 ```sh
 docker run -p 8080:3000 felippemauricio/challenge-bravo
@@ -101,7 +101,7 @@ docker run -p 8080:3000 felippemauricio/challenge-bravo
 
 ## Production
 
-Each version of the code that is mergeed to `master`, the system makes the deploy on `Heroku` using the docker image. So, you can access using the `https://challenge-bravo.herokuapp.com` host.
+Each version of the code that is merged to `master`, the system makes the deploy on `Heroku` using the docker image. So, you can access using the `https://challenge-bravo.herokuapp.com` host.
 
 Examples:
 ```sh
@@ -117,5 +117,6 @@ get https://challenge-bravo.herokuapp.com/currency-conversion?from=BTC&to=EUR&am
 | CRYPTOCOMPARE_RETRY_DELAY    | 100                    | Delay into CryptoCompare API request                    |
 | CRYPTOCOMPARE_RETRY_TIMES    | 1                      | Retry strategy to fail requests                         |
 | CRYPTOCOMPARE_TIMEOUT        | 3000                   | Timeout into CryptoCompare API request                  |
+| MEMORY_CACHE_TTL             | 3600000 (1 hour)       | Memory cache ttl (ms)                                   |
 | NODE_ENV                     | development            | Current Enviroment                                      |
 | PORT                         | 3000                   | Port to start server                                    |

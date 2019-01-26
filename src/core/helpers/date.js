@@ -9,5 +9,10 @@ const getToday = () => {
   return `${year}-${month}-${day}`;
 };
 
+const getCurrentTime = () => new Date().getTime();
 
-module.exports = getToday;
+
+module.exports = {
+  getCurrentTime,
+  getToday,
+};

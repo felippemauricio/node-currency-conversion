@@ -8,7 +8,7 @@ const _verifyCryptoCompare = async () => {
   const from = 'USD';
   const to = ['USD'];
   try {
-    await cryptoCompare.makeRequest({ from, to })();
+    await cryptoCompare.makeRequest(from, to)();
     return true;
   } catch (_) {
     return false;

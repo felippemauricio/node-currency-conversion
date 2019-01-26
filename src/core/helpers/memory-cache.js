@@ -1,7 +1,7 @@
 const NodeCache = require('node-cache');
 
-const myCache = new NodeCache();
 
+const myCache = new NodeCache();
 
 const set = (key, value) => {
   myCache.set(key, value);
