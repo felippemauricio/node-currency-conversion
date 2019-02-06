@@ -8,15 +8,19 @@
     "start": "pm2-runtime start ecosystem.config.js --env production",
     "start-dev": "nodemon server.js",
     "test": "jest tests --forceExit --detectOpenHandles",
-    "test-coverage": "jest tests --coverage --coverageReporters=text-lcov --forceExit --detectOpenHandles | coveralls",
-    "test-system": "jest tests/system --forceExit --detectOpenHandles",
-    "test-unit": "jest tests/unit"
+    "test:ci": "jest tests --coverage --coverageReporters=text-lcov --forceExit --detectOpenHandles | coveralls",
+    "test:system": "jest tests/system --forceExit --detectOpenHandles",
+    "test:unit": "jest tests/unit"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/felippemauricio/node-currency-conversion.git"
   },
-  "author": "Felippe Maurício",
+  "author": {
+    "name": "Felippe Maurício",
+    "email": "felippemauriciov@gmail.com",
+    "url": "https://github.com/felippemauricio"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/felippemauricio/node-currency-conversion/issues"

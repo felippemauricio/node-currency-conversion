@@ -18,11 +18,11 @@ test:
 	make down
 
 test-unit:
-	docker-compose run node yarn run test-unit
+	docker-compose run node yarn run test:unit
 	make down
 
 test-system:
-	docker-compose run node yarn run test-system
+	docker-compose run node yarn run test:system
 	make down
 
 start:

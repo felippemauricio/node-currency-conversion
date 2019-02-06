@@ -46,8 +46,8 @@ make test // All tests
 
 // or
 
-make test-unit    // Unit tests
-make test-system  // System tests
+make test:unit    // Unit tests
+make test:system  // System tests
 ```
 
 ## Architecture
