@@ -8,7 +8,7 @@ services:
     working_dir: /var/application/current
     networks:
       - challenge-bravo-network
-    command: yarn run start-dev
+    command: yarn run start:dev
     ports:
       - 3000:3000
 networks:

@@ -1,5 +1,8 @@
 language: node_js
 
+node_js:
+  - "11.9.0"
+
 cache:
   yarn: true
 
@@ -7,7 +10,7 @@ stages:
   - lint
   - test
   - docker-hub
-  - deploy-on-heroku
+  - deploy-heroku
 
 jobs:
   include:
@@ -18,7 +21,7 @@ jobs:
 
     - stage: test
       script:
-        - yarn run test:ci
+        - yarn run test:coverage
 
     - stage: docker-hub
       sudo: required
@@ -33,7 +36,7 @@ jobs:
       on:
         branch: master
 
-    - stage: deploy-on-heroku
+    - stage: deploy-heroku
       sudo: required
       provider: heroku
       services:
