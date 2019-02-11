@@ -4225,10 +4225,10 @@ progress@^2.0.0:
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
   integrity sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==
 
-promise-fn-retry@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/promise-fn-retry/-/promise-fn-retry-1.0.7.tgz#1bb526b2182aca31d06b2aeaa642301696f3984a"
-  integrity sha512-8MJ9+cTtjtb5ZUMHnyrbVavWnEr9q1D+X5vx8tMDYfjU78gDSg6bQYnyQRIH2NhshA/N8ds/xPdORpv4er1d5g==
+promise-fn-retry@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/promise-fn-retry/-/promise-fn-retry-1.0.8.tgz#25d32e71b9472793261fee962851979e6c832609"
+  integrity sha512-KKhQ1m0iXadSWaihd9N7sI6UkV8UgH85qGt3xtg7Ynnob2haS3fraT5RiAVp1lcG78+HFZ1eqRvC6+/jVXWxoQ==
 
 promptly@^2:
   version "2.2.0"
