@@ -1,4 +1,4 @@
-FROM node:11.7.0-alpine
+FROM node:11.9.0-alpine
 MAINTAINER Felippe Maurício
 
 COPY . /var/application/current
