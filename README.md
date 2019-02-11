@@ -103,10 +103,15 @@ docker run -p 8080:3000 felippemauricio/challenge-bravo
 
 Each version of the code that is merged to `master`, the system makes the deploy on `Heroku` using the docker image. So, you can access using the `https://challenge-bravo.herokuapp.com` host.
 
-Examples:
+### Examples
+
+- get health
 ```sh
-get https://challenge-bravo.herokuapp.com/health
-get https://challenge-bravo.herokuapp.com/currency-conversion?from=BTC&to=EUR&amount=123.45
+curl https://challenge-bravo.herokuapp.com/health
+```
+- get currency conversion
+```sh
+curl https://challenge-bravo.herokuapp.com/currency-conversion?from=BTC&to=EUR&amount=123.45
 ```
 
 ## Enviroment vars
