@@ -1,6 +1,6 @@
 {
   "name": "node-currency-conversion",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Currency converter node",
   "main": "server.js",
   "scripts": {
