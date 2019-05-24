@@ -52,7 +52,7 @@ make test:system  // System tests
 
 ## Architecture
 
-![](https://raw.githubusercontent.com/felippemauricio/node-currency-conversion/master/docs/images/architecture.png)
+![](https://raw.githubusercontent.com/felippemauricio/node-currency-conversion/master/docs/images/architecture.jpg)
 
 
 ## Endpoints
